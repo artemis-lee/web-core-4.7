@@ -1,0 +1,205 @@
+@font-face {
+    font-family: Barlow;
+    src: url(/fonts/otf/Barlow-Light.otf);
+    font-weight: 300;
+    font-style: normal;
+
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #eff6ff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Barlow;
+    color: #2a4a5c;
+}
+
+.iintoo {
+    background-color: #FFFFFF;
+    display: flex;
+    height: 800px;
+    justify-content: center;
+    margin-top: 60px;
+}
+
+.background {
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    height: 65px;
+    width: 300px;
+    z-index: 3;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+
+.image {
+    display: flex;
+}
+.container {
+    display: grid;
+    width: 600px;
+    justify-content: center;
+}
+
+img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.facebook {
+    background-color: #255a9b;
+    color: white;
+    width: 230px;
+    height: 40px;
+    border: none;
+}
+
+.linkedin {
+    background-color: #0076b6;
+    color: white;
+    width: 230px;
+    height: 40px;
+    border: none;
+}
+
+.container input[type="email"], .container input[type="phone"] {
+    width: 220px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 50px;
+}
+
+.email, .phone {
+    position: relative;
+}
+
+.email span, .phone span {
+    position: absolute;
+    left: 4px;
+}
+
+.email input:focus {
+    border-left: 2px solid blue;
+    outline: none;
+}
+
+.phone input:focus {
+    outline: none;
+    border-left: 2px solid blue;
+}
+
+.submit {
+    background-color: #3698fb;
+    color: white;
+    margin-top: 50px;
+    width: 230px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+}
+
+.social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+
+.text {
+    margin-top: 50px;
+    
+}
+
+h2 {
+    font-size: 30px;
+}
+
+.inputs {
+    display: flex;
+    gap: 60px;
+    margin-top: 50px;
+}
+
+.term {
+    margin-top: 80px;
+}
+
+.or {
+    text-align: center;
+}
+
+.registration {
+    display: flex;
+   justify-content: space-between;
+}
+
+.term label {
+    color: grey;
+}
+
+a:link { color: blue; }
+a:visited { color: rgb(51, 0, 255); } 
+a:hover { color: red; } 
+
+.tooltip-container {
+    position: relative;
+    display: inline-block;
+    cursor: help;
+}
+.tooltip-icon {
+    font-size: 16px;
+    color: #000;
+}
+
+.tooltip-text {
+    visibility: hidden;
+    width: 180px; 
+    background-color: white; 
+    color: grey; 
+    text-align: center;
+    border-radius: 5px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+
+
+.tooltip-container:hover .tooltip-text {
+    visibility: visible;
+    opacity: 1; 
+}
+
+.facebook img, 
+.linkedin img {
+    width: 18px;
+    height: 18px;
+}
+
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .image {
+        display: none;
+    }
+
+    
+    body {
+        background-image: url(https://github.com/Habsida-Projects/css-task/blob/main/img/bg.jpg?raw=true);
+    }
+}
